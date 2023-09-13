@@ -7,26 +7,21 @@ using System.Threading.Tasks;
 
 namespace csharp_abstract_animals.Animal
 {
-    public class Eagle : Animal, IFly, ISwim
+    public class Dog : Animal, ISwim
     {
         public override void Eat()
         {
-            Console.WriteLine("Meat");
+            Console.WriteLine("Kibble");
         }
         public override void Talk()
         {
-            Console.WriteLine("Screech - screech");
-
-        }
-
-        public void Fly()
-        {
-            Console.WriteLine("I believe i can flyyyyyy!!!");
-        }
-
+        Console.WriteLine("Woof - woof");
+        }   
         public void Swim()
         {
-            Console.WriteLine("I can swim to eat a better food");
+            Console.WriteLine("I can't do it John!");
         }
+
     }
+    
 }
